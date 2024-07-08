@@ -1,6 +1,6 @@
 :root {
   --main-font: Raleway;
-  --accent-color: "STIX Two Text";
+  --accent-font: "STIX Two Text";
   --bg-color: #f3efec;
   --text-color: #312a4e;
   --accent-color: #ffab6b;
@@ -18,7 +18,6 @@
   color: var(--text-color, #312a4e);
   font-family: var(--main-font, sans-serif);
   background-color: var(--bg-color, #f3efec);
-
 }
 
 p,
@@ -31,4 +30,23 @@ ol,
 li,
 figure {
   margin: 0;
+}
+
+.heading {
+  font-family: var(--accent-font, serif);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 0.9;
+  text-align: center;
+}
+
+.content-section {
+  padding: 0 5vi;
+}
+
+.header__title {
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+.content-title {
 }
