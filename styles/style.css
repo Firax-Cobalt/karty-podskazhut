@@ -53,6 +53,32 @@ figure {
   margin-block-end: 40px;
 }
 
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-block-start: 1px solid currentColor;
+  border-block-start: 1px solid currentColor;
+  padding-block: 20px;
+}
+
+.header__theme-toggler {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.header__theme-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__theme-button_is-active {
+  font-weight: 700;
+}
+
 .content__title {
   font-size: 30px;
   margin: 7% 0 2.5%;
