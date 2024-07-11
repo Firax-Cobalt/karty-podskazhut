@@ -55,3 +55,13 @@ figure {
   font-size: 30px;
   margin: 7% 0 2.5%;
 }
+
+.content__text-block {
+  font-size: 18px;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+.content__paragraph a {
+  color: inherit;
+}
