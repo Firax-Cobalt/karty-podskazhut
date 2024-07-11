@@ -93,7 +93,6 @@ figure {
 .content__list li::before {
   content: "";
   background: url("../images/marker-light.svg") no-repeat;
-  /* margin-block-start: -7.5px; */
   background-size: contain;
   background-position: center;
   inline-size: 15px;
@@ -101,4 +100,14 @@ figure {
   position: absolute;
   inset-inline-start: -25px;
   inset-block-start: 3px;
+}
+
+.content__text-block_type_first-lettered
+  .content__paragraph:first-of-type::first-letter {
+  display: inline-block;
+  margin-inline-end: 1px;
+  padding: 0 4px;
+  background-color: var(--accent-color);
+  font-size: 30px;
+  font-weight: 700;
 }
