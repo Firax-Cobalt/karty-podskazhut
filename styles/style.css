@@ -4,6 +4,7 @@
   --bg-color: #f3efec;
   --text-color: #312a4e;
   --accent-color: #ffab6b;
+  font-size: 62.5%;
 }
 
 *,
@@ -127,4 +128,38 @@ figure {
   border-block-end: 1px solid currentColor;
   padding: 20px;
   text-align: center;
+}
+
+.content__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 7%;
+  border: 1px solid currentColor;
+  aspect-ratio: 4/3;
+}
+
+.content__card-title {
+  font-size: 6rem;
+}
+
+.content__card-subtitle {
+  font-size: 1.8rem;
+}
+
+.colored-text {
+  position: relative;
+  display: inline-block;
+}
+
+.colored-text::after {
+  content: '';
+  inline-size: calc(100% + 8px);
+  block-size: 0.5ch;
+  position: absolute;
+  inset-inline-start: -4px;
+  inset-block-end: 0.3ch;
+  background-color: var(--accent-color);
+  z-index: -1;
 }
