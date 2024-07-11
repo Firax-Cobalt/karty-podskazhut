@@ -32,12 +32,26 @@ figure {
   margin: 0;
 }
 
+.header {
+  padding-top: 10%;
+}
+
 .heading {
   font-family: var(--accent-font, sans-serif);
-  font-size: 30px;
   font-weight: 600;
   line-height: 0.9;
   text-align: center;
 }
 
+.content-section {
+  padding: 0 5vi;
+}
 
+.header__title {
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
+.content__title {
+  font-size: 30px;
+  margin: 7% 0 2.5%;
+}
