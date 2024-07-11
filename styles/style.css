@@ -31,3 +31,13 @@ li,
 figure {
   margin: 0;
 }
+
+.heading {
+  font-family: var(--accent-font, sans-serif);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 0.9;
+  text-align: center;
+}
+
+
