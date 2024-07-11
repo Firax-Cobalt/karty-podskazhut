@@ -75,3 +75,28 @@ figure {
   width: 75%;
   margin-block-end: 1.5em;
 }
+
+.content__list {
+  list-style: none;
+  line-height: 1.1;
+}
+
+.content__list-item {
+  position: relative;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.content__list-item::before {
+  content: "";
+  background: url("../images/marker-light.svg") no-repeat;
+  background-size: 15px 15px;
+  background-position: center;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 3px;
+  left: -25px;
+}
