@@ -72,31 +72,33 @@ figure {
 .content__blockquote {
   font-style: italic;
   line-height: 2;
-  width: 75%;
-  margin-block-end: 1.5em;
+  inline-size: 75%;
+  margin: 0 auto 1.5em;
 }
 
 .content__list {
   list-style: none;
   line-height: 1.1;
+  padding: 0 0 0 40px;
 }
 
-.content__list-item {
+.content__list li {
   position: relative;
 }
 
-.content__list-item:not(:last-child) {
-  margin-bottom: 10px;
+.content__list li:not(:last-child) {
+  margin-block-end: 10px;
 }
 
-.content__list-item::before {
+.content__list li::before {
   content: "";
   background: url("../images/marker-light.svg") no-repeat;
-  background-size: 15px 15px;
+  /* margin-block-start: -7.5px; */
+  background-size: contain;
   background-position: center;
-  width: 15px;
-  height: 15px;
+  inline-size: 15px;
+  block-size: 15px;
   position: absolute;
-  top: 3px;
-  left: -25px;
+  inset-inline-start: -25px;
+  inset-block-start: 3px;
 }
