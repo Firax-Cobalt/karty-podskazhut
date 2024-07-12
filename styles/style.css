@@ -21,6 +21,11 @@
   font-family: var(--main-font, sans-serif);
 }
 
+.theme_dark {
+  color: var(--text-color, #312a4e);
+  background-color: var(--bg-color, #f3efec);
+}
+
 p,
 h1,
 h2,
@@ -229,4 +234,21 @@ button:focus-visible {
   inset-block-end: 0.3ch;
   background-color: var(--accent-color);
   z-index: -1;
+}
+
+.footer {
+  border-block-start: 1px solid currentColor;
+  padding-block: 2.5%;
+  padding-inline: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright { 
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  color: currentColor;
+  text-transform: uppercase;
 }
