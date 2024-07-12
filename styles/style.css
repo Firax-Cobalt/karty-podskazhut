@@ -33,6 +33,11 @@ figure {
   margin: 0;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: none;
+}
+
 .header {
   padding-top: 10%;
 }
@@ -81,12 +86,21 @@ figure {
   position: relative;
 } 
 
+.header__theme-button:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 1px;
+}
+
 .header__theme-button:hover {
   text-decoration: underline;
 }
 
 .header__theme-button_is-active {
   font-weight: 700;
+}
+
+.header__theme-button_is-active:disabled {
+  pointer-events: none;
 }
 
 .header__theme-button_is-active::after {
@@ -112,6 +126,11 @@ figure {
 
 .content__paragraph a {
   color: inherit;
+}
+
+.content__paragraph a:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 1px;
 }
 
 .content__text-block .content__paragraph:not(:last-of-type) {
