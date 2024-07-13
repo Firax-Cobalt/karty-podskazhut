@@ -232,18 +232,12 @@ button:disabled {
 }
 
 .footer {
+  margin-block-start: 10%;
   border-block-start: 1px solid currentColor;
-  padding-block: 2.5%;
-  padding-inline: 2.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 2.5%;
+  text-align: center;
 }
 
 .footer__copyright {
-  font-weight: 400;
   font-size: 1.8rem;
-  line-height: 1.1;
-  color: currentColor;
-  text-transform: uppercase;
 }
