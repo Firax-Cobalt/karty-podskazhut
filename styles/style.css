@@ -43,6 +43,15 @@ button:focus-visible {
   outline: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+button:disabled {
+  pointer-events: none;
+}
+
 .header {
   padding-top: 10%;
 }
@@ -89,11 +98,6 @@ button:focus-visible {
   line-height: 1;
   color: currentColor;
   position: relative;
-} 
-
-.header__theme-button:focus-visible {
-  outline: 1px solid currentColor;
-  outline-offset: 1px;
 }
 
 .header__theme-button:hover {
@@ -104,20 +108,16 @@ button:focus-visible {
   font-weight: 700;
 }
 
-.header__theme-button_is-active:disabled {
-  pointer-events: none;
-}
-
 .header__theme-button_is-active::after {
-  content: '';
+  content: "";
   display: inline-block;
   inline-size: calc(100% + 8px);
   block-size: 6px;
   background-color: var(--accent-color);
   position: absolute;
-    inset-block-start: 9px;
-    inset-inline-start: -4px;
-    z-index: -1;
+  inset-block-start: 9px;
+  inset-inline-start: -4px;
+  z-index: -1;
 }
 
 .content__title {
@@ -131,11 +131,6 @@ button:focus-visible {
 
 .content__paragraph a {
   color: inherit;
-}
-
-.content__paragraph a:focus-visible {
-  outline: 1px solid currentColor;
-  outline-offset: 1px;
 }
 
 .content__text-block .content__paragraph:not(:last-of-type) {
@@ -226,7 +221,7 @@ button:focus-visible {
 }
 
 .colored-text::after {
-  content: '';
+  content: "";
   inline-size: calc(100% + 8px);
   block-size: 0.5ch;
   position: absolute;
@@ -245,7 +240,7 @@ button:focus-visible {
   align-items: center;
 }
 
-.footer__copyright { 
+.footer__copyright {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.1;
